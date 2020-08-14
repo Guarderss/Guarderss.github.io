@@ -1,149 +1,132 @@
 <!DOCTYPE html>
-<html >
+<html lang="zh-cmn-Hans">
 <head>
     <meta charset="UTF-8">
-<!--    每30秒钟刷新当前页面:-->
-    <meta http-equiv="refresh   " content="30">
-<!--    <base> 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接:-->
-    <base href="http://www.runoob.com/images/" target="_blank">
-    <title>第一个网页</title>
-<!--    当单个文件需要特别样式时，就可以使用内部样式表。你可以在<head> 部分通过 <style>标签定义内部样式表:-->
-    <style type="text/css">
-        body {background-color: azure;}
-        p {color: blue;}
-    </style>
-<!--    当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。-->
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <base >
+    <title>Fly の 宅基地</title>
+    <link href="cdn.bootcss.com/minireset.css/0.0.2/minireset.min.css" rel="stylesheet">
+    <link href="moe-cdn.fly3949.com/assets/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-    <h1>我的第一个标题</h1><br>
-    <i>这个文本是斜体的</i>
-    <p>我的第二个段落</p>
-    <h2>我的第二个标题</h2>
-    <b>这个文本是加粗的</b>
-    <h1>我的第三个标题</h1>
-    <hr />
-    <a href="https://www.runoob.com">这是一个链接</a>
-    <h1>我的第三个标题</h1>
-    <strong>这个文本是加粗的</strong>
-    <big>这个文本字体放大</big>
-    <em>这个文本是斜体的</em>
-    <small>这个文本是缩小的</small>
-    <sub>下标</sub>
-    <sup>上标</sup>
-    <a href="/index.html">本文本</a> 是一个指向本网站中的一个页面的链接。</p>
-    <p><a href="//www.microsoft.com/">本文本</a> 是一个指向万维网上的页面的链接。</p>
-<!--    如果你将 target 属性设置为 &quot;_blank&quot;, 链接将在新窗口打开。-->
-    <a href="https://www.runoob.com/" target="_blank">访问菜鸟教程!</a>
-<!--    我们可以使用font-family（字体），color（颜色），和font-size（字体大小）属性来定义字体的样式:-->
-    <p style="font-family:arial;color:#ff0000;font-size:20px;">一个段落。</p>
-    <h1 style="text-align:center;">居中对齐的标题</h1>
-    <img border="0" src="/images/pulpit.jpg" alt="Pulpit rock" width="304" height="228">
-<!--    align 如何在文字中排列图像-->
-    <p>这是一些文本。 <img src="/images/pulpit.jpg" alt="Pulpit rock" align="middle" width="304" height="228">这是一些文本。</p>
-    <img src="/images/pulpit.jpg" alt="Pulpit rock" style="float:right" width="304" height="228"> 一个带图片的段落，图片浮动在这个文本的右边。
-<!--    无边框的图片链接-->
-    <a href="//www.runoob.com/html/html-tutorial.html">
-        <img border="0" src="smiley.gif" alt="HTML 教程" width="32" height="32"></a></p>
-<!--    创建图像映射-->
-    <p>点击太阳或其他行星，注意变化：</p>
-    <img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
-<!--    定义图像地图-->
-    <map name="planetmap">
-<!--        shape指的是点击区域的形状，coords指的应该是链接区域在图片中的坐标（像素为单位）-->
-<!--        定义图像地图中的可点击区域-->
-<!--        矩形：(左上角顶点坐标为(x1,y1)，右下角顶点坐标为(x2,y2))-->
-    <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
-<!--        圆形：(圆心坐标为(X1,y1)，半径为r)-->
-    <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
-    <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
-    </map>
-    <a target="_top" title="HTML 教程"  href="/html/html-tutorial.html" >
-			HTML 教程			</a>
-<!--    表格由 <table> 标签来定义。每个表格均有若干行（由 <tr> 标签定义），每行被分割为若干单元格（由 <td> 标签定义）。字母 td 指表格数据（table data），
-        即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。-->
-    <table border="1">
-        <caption>Monthly savings</caption>
-    <tr>
-<!--        单元格跨两列-->
-        <th colspan="2">row 1, cell 1</th>
-<!--        单元格跨两行-->
-        <th rowspan="2">row 1, cell 2</th>
-    </tr>
-    <tr>
-        <td>row 2, cell 1</td>
-        <td>row 2, cell 2</td>
-    </tr>
-    </table>
-    <h4>有单元格边距:</h4>
-<!--    单元格边距：cellpadding   单元格间距：cellspacing-->
-    <table border="1"
-    cellpadding="10" cellspacing="0">
-    <tr>
-    <td>First</td>
-    <td>Row</td>
-    </tr>
-    <tr>
-    <td>Second</td>
-    <td>Row</td>
-    </tr>
-    </table>
-    <h4>无序列表:</h4>
-    <ul>
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-    </ul>
-    <h4>有序列表:</h4>
-    <ol>
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-    </ol>
-    <ol start="50">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-    </ol>
-     <p>我有一双
-    <span style="color:gold">金色</span> 的
-    <span style="font-size:50px">大眼睛</span>和
-    <span style="color:blue">蓝色的头发</span></p> 。
-<div id="container" style="width:800px">
+    <!-- Loading hover -->
+    <div class="loading">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
 
-<div id="header" style="background-color:#FFA500;">
-<h1 style="margin-bottom:0;">Main Title of Web Page</h1></div>
+    <!-- Main box -->
+    <main>
+        <div class="content">
+            <div class="left">
+                <div class="avatar">
+                    <img src="moe-cdn.fly3949.com/assets/img/logo.jpg">
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a goto="#home">HOME</a>
+                    </li>
+                    <li>
+                        <a goto="#archives">ARCHIVES</a>
+                    </li>
+                    <li>
+                        <a goto="#contact">CONTACT</a>
+                    </li>
+                    <li>
+                        <a goto="#donate">DONATE</a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    Made with
+                    <i class="fa fa-heart"></i> by
+                    <br>
+                    <a href="index.html" target="_blank">Fly3949</a>
+                </div>
+            </div>
+            <div class="right">
+                <section id="home" class="active">
+                    <h1>Fly3949</h1>
+                    <p>
+                        我，Fly3949，苣蒻。
+                        <br> 对，苣蒻，菜，菜爆了。
+                        <br> 身处祖国东南一隅，就读于某不知名高中。
+                        <br> 喜欢看 LWL穿女装。
+                    </p>
+                </section>
+                <section id="archives">
+                    <h1>近期文章</h1>
+                    <ul class="archive-list">
+                        <li>加载中...</li>
+                    </ul>
+                </section>
+                <section id="contact">
+                    <h1>捕捉方式</h1>
+                    <div class="items">
+                        <a href="https://www.fly3949.com/" target="_blank">
+                            <i class="fa fa-home"></i>
+                            <span>Blog</span>
+                        </a>
+                        <a href="https://weibo.com/fly3949/" target="_blank">
+                            <i class="fa fa-weibo"></i>
+                            <span>Weibo</span>
+                        </a>
+                        <a href="https://plus.google.com/u/0/101753687289611833602" target="_blank">
+                            <i class="fa fa-google-plus"></i>
+                            <span>Google+</span>
+                        </a>
+                        <a href="https://twitter.com/ifly3949" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://github.com/fly3949" target="_blank">
+                            <i class="fa fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:i@iifly.cn" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                            <span>E-Mail</span>
+                        </a>
+                    </div>
+                </section>
+                <section id="donate">
+                    <h1>拯救吃土的 Fly</h1>
+                    <div class="donate-img-box">
+                        <img src="moe-cdn.fly3949.com/assets/img/WeChat.png">
+                        <img src="moe-cdn.fly3949.com/assets/img/AliPay.png">
+                    </div>
+<!--                     <p>
+                        Bitcoin: 32VRHdCR1nSsKG5aXi4MZBrvTwH8dvHFm4
+                        <br>PayPal:
+                        <a href="https://paypal.me/lwl12" target="_blank">https://paypal.me/lwl12</a>
+                    </p> -->
+                </section>
+            </div>
+        </div>
 
-<div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
-<b>Menu</b><br>
-HTML<br>
-CSS<br>
-JavaScript</div>
+        <footer>
+            <p id="hitokoto">Loading...</p>
+            <div class="copyright-mobile">
+                Made with
+                <i class="fa fa-heart"></i> by
+                <a href="index.html" target="_blank">Fly3949</a>
+            </div>
+        </footer>
+    </main>
 
-<div id="content" style="background-color:#EEEEEE;height:200px;width:700px;float:left;">
-Content goes here</div>
-
-<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
-Copyright © w3cschool.cn</div>
-
-</div>
-<form>
-<!--    文本域（Text Fields）-->
-First name: <input type="text" name="firstname"><br>
-Last name: <input type="text" name="lastname">
-<!--    密码字段-->
-    Password: <input type="password" name="pwd">
-<!--    <input type="radio"> 标签定义了表单单选框选项。-->
-    <input type="radio" name="sex" value="male">Male<br>
-<input type="radio" name="sex" value="female">Female
-<!--    <input type="checkbox"> 定义了复选框. 用户需要从若干给定的选择中选取一个或若干选项。-->
-    <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
-<input type="checkbox" name="vehicle" value="Car">I have a car
-<!--    <input type="submit"> 定义了提交按钮.-->
-    Username: <input type="text" name="user">
-<input type="submit" value="Submit">
-</form>
-<iframe src="//www.w3cschool.cn/" width="1000" height="200" frameborder="0">
-</iframe>
+    <!-- Some scripts -->
+    <script src="cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="moe-cdn.fly3949.com/assets/js/main.js"></script>
 </body>
 </html>
